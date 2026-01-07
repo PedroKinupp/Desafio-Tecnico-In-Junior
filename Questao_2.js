@@ -10,3 +10,10 @@ function fatorial(number){
 
 number=prompt("digite um número para calcular seu fatorial");
 console.log(fatorial(number));
+let queroCalcular = confirm("Deseja calcular o fatorial de outro número?")
+
+do{
+    number=prompt("digite um número para calcular seu fatorial");
+    console.log(fatorial(number));
+    queroCalcular = confirm("Deseja calcular o fatorial de outro número?")
+}while(queroCalcular)

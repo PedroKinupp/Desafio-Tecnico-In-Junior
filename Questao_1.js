@@ -2,7 +2,7 @@ let a = prompt("digite o coeficiente a");
 let b = prompt("digite o coeficiente b");
 let c = prompt("digite o coeficiente c");
 let delta = (b*b) + (-4*a*c);
-console.log("delta: " + delta);
+console.log("discriminante: " + delta);
 
 if(delta<0){
     console.log("equação não possui raízes")

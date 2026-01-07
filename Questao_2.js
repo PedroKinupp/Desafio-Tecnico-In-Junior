@@ -1,19 +1,22 @@
 function fatorial(number){
-    if(number<0 || number%1!=0) return "número inválido";
+    if(number<0 || number%1!=0) return -1;
     let resultado=1;
     while(number>1){
         resultado*=number;
         number--;
     }
-    return "fatorial: " + resultado;
+    return "Fatorial: " + resultado;
 }
 
-number=prompt("digite um número para calcular seu fatorial");
-console.log(fatorial(number));
-let queroCalcular = confirm("Deseja calcular o fatorial de outro número?")
-
-do{
+let queroCalcular=true;
+while(queroCalcular){
     number=prompt("digite um número para calcular seu fatorial");
-    console.log(fatorial(number));
-    queroCalcular = confirm("Deseja calcular o fatorial de outro número?")
-}while(queroCalcular)
+    if(fatorial(number)==-1) console.log("Número inválido. digite outro número");
+    else{
+        console.log(fatorial(number));
+        let confirmacao = prompt("Deseja calcular outro número? (S) ou (N)");
+        if(confirmacao=='S' || confirmacao=='s') queroCalcular = true;
+        else if(confirmacao=='N' || confirmacao=='n') queroCalcular = false;
+        else queroCalcular = false
+    }
+}

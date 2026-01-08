@@ -1,6 +1,9 @@
-function fibonacci(n){
-    if(n == 0) return 0
-    else if(n == 1) return 1
+function fibonacci(n){  
+    if(n==0) return [0]
+    else if(n==1) return [0,1]
 
-    return fibonacci(n-1) + fibonacci(n-2)
+    let fib = fibonacci(n - 1)
+    fib.push(fib[fib.length - 1] + fib[fib.length - 2])
+
+    return fib
 }

@@ -1,3 +1,4 @@
+//Função resposta do exercício
 function countBooksInCategory(array){
     const object = {}
 
@@ -9,6 +10,7 @@ function countBooksInCategory(array){
     return object
 }
 
+//array de teste (similar ao exercício)
 const booksByCategory =[
     {
         category: "Romance",
@@ -38,19 +40,19 @@ const booksByCategory =[
                 titulo: "seila",
                 autor: "seila também"
             },
+            {
+                titulo: "seila",
+                autor: "seila também"
+            },
+            {
+                titulo: "seila",
+                autor: "seila também"
+            },
         ]
     },
     {
         category: "Suspense",
         books: [
-            {
-                titulo: "seila",
-                autor: "seila também"
-            },
-            {
-                titulo: "seila",
-                autor: "seila também"
-            },
             {
                 titulo: "seila",
                 autor: "seila também"

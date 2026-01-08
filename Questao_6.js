@@ -9,4 +9,4 @@ function fibonacci(n){
 }
 
 let n = prompt("Digite um número inteiro")
-console.log(fibonacci(n))
+console.log(fibonacci(n-1))

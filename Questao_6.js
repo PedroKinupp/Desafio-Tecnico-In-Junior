@@ -7,3 +7,6 @@ function fibonacci(n){
 
     return fib
 }
+
+let n = prompt("Digite um número inteiro")
+console.log(fibonacci(n))

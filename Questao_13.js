@@ -39,10 +39,28 @@ function calcularPontuacaoMedia(){
     return media/time.length
 }
 
-adicionarJogador("Pedro", 19, "Atacante", 67)
-adicionarJogador("João", 67, "Goleiro", 25)
-adicionarJogador("Ana", 20, "Atacante", 80)
-listarTime()
-console.log(calcularPontuacaoMedia())
-console.log(buscarPorPosicao("Atacante"))
-console.log(time)
+let opcao;
+do{
+    console.log("1- Adicionar jogador")
+    console.log("2- Buscar por posição")
+    console.log("3- Listar time")
+    console.log("4- Calcular pontuação média")
+    console.log("5- Sair")
+
+    opcao=prompt("Escolha uma opção:")
+
+    switch(opcao){
+        case "1":
+            adicionarJogador()
+            break
+        case "2":
+            console.log(buscarPorPosicao())
+            break
+        case "3":
+            listarTime()
+            break
+        case "4":
+            console.log(calcularPontuacaoMedia())
+            break
+    }
+} while(opcao != "5")

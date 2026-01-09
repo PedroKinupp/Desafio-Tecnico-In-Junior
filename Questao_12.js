@@ -7,3 +7,5 @@ function encontrarElementoUnico(array){
     })
     return aux[0]
 }
+
+console.log(encontrarElementoUnico([1,4,7,1,7,8,4,9,9]))
